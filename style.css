@@ -1,0 +1,173 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(58, 62, 66);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: 100%;
+  position: relative;
+}
+
+.case {
+  overflow: hidden;
+  height: 510px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.over {
+  position: absolute;
+  top: 0;
+  height: 510px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.case .content {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+}
+
+.case img {
+  height: 400px;
+  position: absolute;
+  right: 0;
+  animation: float 3s ease-in-out infinite;
+  z-index: 20;
+}
+
+.bi-arrow-down-circle-fill {
+  position: absolute;
+  bottom: 50px;
+  animation: float 3s ease-in-out infinite;
+  z-index: 20;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#vd {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.acc .produits .card {
+  border-radius: 0;
+  width: 25% !important;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .acc .produits .card {
+    width: 50% !important;
+  }
+}
+
+.categorie h2 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.categorie h2:hover {
+  background-color: #17a2b8;
+}
+
+.categorie h2:hover {
+  color: white;
+}
+
+.produitsA {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 50px;
+}
+
+.produits img {
+  height: 200px;
+}
+
+.produitsA img {
+  height: 200px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  background-color: white;
+  padding: 50px;
+  border-radius: 2em;
+}
+
+#log {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#pannel {
+  background: white;
+  width: 300;
+  height: 100vh;
+  position: fixed;
+}
+
+#pannel a:hover {
+  text-decoration: none;
+  color: rgb(58, 62, 66);
+}
+
+#pannel a {
+  color: rgb(58, 62, 66);
+}
+
+#pannel li:hover {
+  background: #17a2b8;
+}
+
+#pannel li:hover a {
+  color: white !important;
+}
+
+#pannel .exit {
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-body {
+  height: 210px;
+  overflow: auto;
+}
